@@ -10,9 +10,8 @@ body {
     width: 100%;
     background-image: url(../Images/background.jpg);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-
+    background-size: 100%;
 }
 
 .menu {
@@ -39,4 +38,71 @@ body {
     width: 200px;
     border-radius: 150px;
     margin-right: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description {
+    font-size: 40px;
+    margin: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.evolution {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.priceTable {
+    border-collapse: collapse;
+    font-size: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.priceTable td {
+    border: 5px solid black;
+    width: 800px;
+    text-align: center;
+}
+
+.tableHeader {
+    background-color: rgb(255, 157, 29);
+    ;
+}
+
+.priceDescription {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 20px;
 }
