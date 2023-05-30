@@ -116,14 +116,6 @@ a:active {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* form {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    flex-direction: column;
-    width: 500px;
-    align-items: center;
-} */
 
 input {
     height: 30px;
@@ -158,4 +150,51 @@ select {
     flex-direction: column;
     width: 500px;
     margin-inline: 30px;
+}
+
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    animation: spin 2s linear infinite;
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-top: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
