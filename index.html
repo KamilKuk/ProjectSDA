@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FurryArrowShop</title>
     <link rel="stylesheet" href="./Styles/style.css">
+    <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 </head>
 
 <body>
@@ -29,6 +35,19 @@
             </ul>
         </nav>
     </div>
+    <button id="signUpBtn" type="button">Sign Up</button>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <h2>Sign Up</h2>
+            <input type="email" id="emailInput" placeholder="Email">
+            <input type="password" id="passwordInput" placeholder="Password">
+            <button type="button" onclick="createAccount">Create Account</button>
+        </div>
+    </div>
+
+
+
     <h1>Welcome my Furry Friends!</h1>
     <div class="description">
         FurryArrow would like to warmly welcome you to this corner of the internet. We are really happy that you visit
@@ -41,6 +60,9 @@
         <img src="./Images/evolution.jpg" alt="evolution">
     </div>
 
+
+
+    <script type="module" src="app.js"></script>
 </body>
 
 </html>
