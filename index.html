@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FurryArrowShop</title>
     <link rel="stylesheet" href="./Styles/style.css">
+    <script type="module" src="./Script/app.js"></script>
     <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
     <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
     <script defer src="/__/firebase/9.17.1/firebase-database-compat.js"></script>
     <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
     <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+
 </head>
 
 <body>
@@ -35,14 +38,17 @@
             </ul>
         </nav>
     </div>
-    <button id="signUpBtn" type="button">Sign Up</button>
-
+    <div class="signUpInButton">
+        <button id="signUpBtn" type="button">Sign Up</button>
+        <button id="signInBtn" type="button">Sign In</button>
+    </div>
     <div id="signupModal" class="modal">
         <div class="modal-content">
+            <span class="close">&times;</span>
             <h2>Sign Up</h2>
             <input type="email" id="emailInput" placeholder="Email">
             <input type="password" id="passwordInput" placeholder="Password">
-            <button type="button" onclick="createAccount">Create Account</button>
+            <button type="button" onclick="createAccount()">Create Account</button>
         </div>
     </div>
 
@@ -62,7 +68,7 @@
 
 
 
-    <script type="module" src="app.js"></script>
+
 </body>
 
 </html>
